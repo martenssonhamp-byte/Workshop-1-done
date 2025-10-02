@@ -4,6 +4,13 @@ Company Name: TechCorp AB
 LAST UPDATED:
 2024-09-30 10:30:00
 ############################################################################################
+                            -----EXECUTIVE SUMMARY-----
+⚠ CRITICAL! 2 devices offline
+⚠ WARNINGS! 3 devices with warning status
+⚠ 9 devices with low uptime < 30 days, could indicate instability!
+⚠ 11 switches with high port usage > 80%! 
+
+############################################################################################
 ATTENTION! Devices with status: Warning!
 
 AP-FLOOR2-02 | warning | 192.168.20.102 | Access_point | Huvudkontor
@@ -36,6 +43,13 @@ SW-MAL-ACC-02| 8  | days
 SW-DC-TOR-02 | 5  | days
 ------------------------------------------------------------------------------------------
 -Switch port usage-
+   Site     Switches  Used/total  Percent 
+Huvudkontor     7     162/216     75.0%
+Lager           2     57 /96      59.4%
+Kontor Malmö    3     79 /96      82.3% ⚠
+Datacenter      5     231/240     96.2% ⚠ CRITICAL!
+Säkerhetskopia  1     12 /28      42.9%
+
  Total switch port usage: 541/676 (80.0%)
 
 -Switch ports usage per location with over 80%-
