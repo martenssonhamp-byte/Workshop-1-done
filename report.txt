@@ -39,52 +39,63 @@ SW-DC-TOR-02 | 5  | days
  Total switch port usage: 541/676 (80.0%)
 
 
-Huvudkontor
-  SW-CORE-01
-  SW-CORE-02
-  SW-DIST-01
-  SW-DIST-02
-  SW-ACCESS-03
-  SW-ACCESS-04
-  SW-ACCESS-05
-  RT-EDGE-01
-  RT-EDGE-02
-  AP-FLOOR1-01
-  AP-FLOOR1-02
-  AP-FLOOR2-01
-  AP-FLOOR2-02
-  AP-FLOOR3-01
-  FW-DMZ-01
-
-Lager
-  SW-LAGER-01
-  SW-LAGER-02
-  RT-LAGER-01
-  AP-LAGER-01
-  AP-LAGER-02
-
-Kontor Malmö
-  SW-MAL-CORE-01
-  SW-MAL-ACC-01
-  SW-MAL-ACC-02
-  RT-MAL-01
-  AP-MAL-01
-  AP-MAL-02
-  FW-MAL-01
-
-Datacenter
-  SW-DC-CORE-01
-  SW-DC-CORE-02
-  SW-DC-TOR-01
-  SW-DC-TOR-02
-  SW-DC-TOR-03
-  RT-DC-EDGE-01
-  FW-DC-01
-  FW-DC-02
-  LB-DC-01
-  LB-DC-02
-
-Säkerhetskopia
-  SW-DR-01
-  RT-DR-01
-  FW-DR-01
+-Switch ports usage per location-
+SW-CORE-01    : 42/48 (87.5%)  CAUTION!
+SW-CORE-02    : 38/48 (79.2%)  
+SW-DIST-01    : 18/24 (75.0%)  
+SW-DIST-02    : 22/24 (91.7%)  CAUTION!
+SW-ACCESS-03  : 0/24 (0.0%)  
+SW-ACCESS-04  : 19/24 (79.2%)  
+SW-ACCESS-05  : 23/24 (95.8%)  CAUTION!
+SW-LAGER-01   : 12/48 (25.0%)  
+SW-LAGER-02   : 45/48 (93.8%)  CAUTION!
+SW-MAL-CORE-01: 35/48 (72.9%)  
+SW-MAL-ACC-01 : 20/24 (83.3%)  
+SW-MAL-ACC-02 : 24/24 (100.0%)  CAUTION!
+SW-DC-CORE-01 : 46/48 (95.8%)  CAUTION!
+SW-DC-CORE-02 : 46/48 (95.8%)  CAUTION!
+SW-DC-TOR-01  : 48/48 (100.0%)  CAUTION!
+SW-DC-TOR-02  : 47/48 (97.9%)  CAUTION!
+SW-DC-TOR-03  : 44/48 (91.7%)  CAUTION!
+SW-DR-01      : 12/28 (42.9%)  
+------------------------------------------------------------------------------------------
+-Unique VLANs in network:-VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!
+VLAN 20 finns!

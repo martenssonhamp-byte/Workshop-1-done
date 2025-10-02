@@ -55,7 +55,7 @@ report += "\n" "-Switch port usage-"
 total_ports = 0
 used_ports = 0
 total_used = 0
-
+# Total port usage
 for location in data["locations"]:
    for device in location["devices"]:
       if device.get("type") == "Switch":
@@ -68,17 +68,36 @@ report += ("\n Total switch port usage: "
            + str(total_used) + "/"
            + str(total_ports) + " ("
            + str(percent) + "%)\n" + "\n")
-       
-
-
-# loop through the location list 
+# Per location
+report += "\n" "-Switch ports usage per location-" "\n"
 for location in data["locations"]:
-    # add the site/'name' of the location to the report
-    report += "\n" + location["site"] + "\n"
-    # add a list of the host names of the devices 
-    # on the location to the report
-    for device in location["devices"]:
-      report += "  " + device["hostname"] + "\n"
+   loc_ports = 0
+   loc_used = 0
+   for device in location["devices"]:
+      if device.get("type") == "Switch":
+         ports = device.get("ports")
+         if ports:
+            used = ports["used"]
+            total = ports["total"]
+            percent = round(used / total * 100, 1) if total > 0 else 0
+            
+            warning = "CAUTION!" if percent >= 85 else ""
+
+            report += (device["hostname"].ljust(14) + ": "
+                + str(used) + "/"
+                + str(total) + " ("
+                + str(percent) + "%)".ljust(4) + warning + "\n")
+
+#6. List of all unique VLANs in use
+report += "------------------------------------------------------------------------------------------" 
+report += "\n" "-Unique VLANs in network:-"
+vlans = set()
+vlans = {10, 20, 30}
+for location in data["locations"]:
+   for device in location["devices"]:
+      if 20 in vlans:
+         report += "VLAN 20 finns!" "\n"
+
 
 # write the report to text file
 with open('report.txt', 'w', encoding='utf-8') as f:
