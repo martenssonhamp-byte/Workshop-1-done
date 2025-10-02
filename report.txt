@@ -38,64 +38,18 @@ SW-DC-TOR-02 | 5  | days
 -Switch port usage-
  Total switch port usage: 541/676 (80.0%)
 
-
--Switch ports usage per location-
-SW-CORE-01    : 42/48 (87.5%)  CAUTION!
-SW-CORE-02    : 38/48 (79.2%)  
-SW-DIST-01    : 18/24 (75.0%)  
-SW-DIST-02    : 22/24 (91.7%)  CAUTION!
-SW-ACCESS-03  : 0/24 (0.0%)  
-SW-ACCESS-04  : 19/24 (79.2%)  
-SW-ACCESS-05  : 23/24 (95.8%)  CAUTION!
-SW-LAGER-01   : 12/48 (25.0%)  
-SW-LAGER-02   : 45/48 (93.8%)  CAUTION!
-SW-MAL-CORE-01: 35/48 (72.9%)  
-SW-MAL-ACC-01 : 20/24 (83.3%)  
-SW-MAL-ACC-02 : 24/24 (100.0%)  CAUTION!
-SW-DC-CORE-01 : 46/48 (95.8%)  CAUTION!
-SW-DC-CORE-02 : 46/48 (95.8%)  CAUTION!
-SW-DC-TOR-01  : 48/48 (100.0%)  CAUTION!
-SW-DC-TOR-02  : 47/48 (97.9%)  CAUTION!
-SW-DC-TOR-03  : 44/48 (91.7%)  CAUTION!
-SW-DR-01      : 12/28 (42.9%)  
+-Switch ports usage per location with over 85%-
+SW-CORE-01    |Huvudkontor |: 42/48 (87.5 %)  | CAUTION!
+SW-DIST-02    |Huvudkontor |: 22/24 (91.7 %)  | CAUTION!
+SW-ACCESS-05  |Huvudkontor |: 23/24 (95.8 %)  | CAUTION!
+SW-LAGER-02   |Lager       |: 45/48 (93.8 %)  | CAUTION!
+SW-MAL-ACC-02 |Kontor Malmö|: 24/24 (100.0%)  | CAUTION!
+SW-DC-CORE-01 |Datacenter  |: 46/48 (95.8 %)  | CAUTION!
+SW-DC-CORE-02 |Datacenter  |: 46/48 (95.8 %)  | CAUTION!
+SW-DC-TOR-01  |Datacenter  |: 48/48 (100.0%)  | CAUTION!
+SW-DC-TOR-02  |Datacenter  |: 47/48 (97.9 %)  | CAUTION!
+SW-DC-TOR-03  |Datacenter  |: 44/48 (91.7 %)  | CAUTION!
 ------------------------------------------------------------------------------------------
--Unique VLANs in network:-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
-VLAN 20 finns!
+-Unique VLANs in network-
+Total amount of VLANs: 19
+10,20,30,40,50,100,110,120,200,300,400,500,600,700,800,900,1000,2000,2100

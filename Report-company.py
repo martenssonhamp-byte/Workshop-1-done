@@ -67,9 +67,9 @@ percent = round(total_used / total_ports * 100, 1)
 report += ("\n Total switch port usage: "
            + str(total_used) + "/"
            + str(total_ports) + " ("
-           + str(percent) + "%)\n" + "\n")
+           + str(percent) + "%)\n")
 # Per location
-report += "\n" "-Switch ports usage per location-" "\n"
+report += "\n" "-Switch ports usage per location with over 85%-" "\n"
 for location in data["locations"]:
    loc_ports = 0
    loc_used = 0
@@ -80,25 +80,33 @@ for location in data["locations"]:
             used = ports["used"]
             total = ports["total"]
             percent = round(used / total * 100, 1) if total > 0 else 0
-            
-            warning = "CAUTION!" if percent >= 85 else ""
+            if percent >= 85:
+                warning = "CAUTION!" if percent >= 85 else ""
 
-            report += (device["hostname"].ljust(14) + ": "
+                report += (device["hostname"].ljust(14) + "|" + location["site"].ljust(12) + "|" + ": "
                 + str(used) + "/"
                 + str(total) + " ("
-                + str(percent) + "%)".ljust(4) + warning + "\n")
+                + str(percent).ljust(5) + "%)".ljust(3) + " | "
+                + warning + "\n")
 
 #6. List of all unique VLANs in use
 report += "------------------------------------------------------------------------------------------" 
-report += "\n" "-Unique VLANs in network:-"
-vlans = set()
-vlans = {10, 20, 30}
-for location in data["locations"]:
-   for device in location["devices"]:
-      if 20 in vlans:
-         report += "VLAN 20 finns!" "\n"
+report += "\n" "-Unique VLANs in network-""\n"
 
-
+vlans_set = set() #Dodge doublets
+for location in data ["locations"]:
+    for device in location["devices"]:
+      if "vlans" in device:
+         for vlan_id in device["vlans"]:
+            vlans_set.add(vlan_id)
+vlan_count = len(vlans_set)
+report += "Total amount of VLANs: " + str(vlan_count) + "\n"
+#for vlan in sorted(vlans_set):
+    #report += str(vlan) + ", "
+for i, vlan in enumerate(sorted(vlans_set)): # i = index, row 106 - 109 is all about removing the last ","
+    report += str(vlan)
+    if i < (vlan_count) -1:
+       report += ","
 # write the report to text file
 with open('report.txt', 'w', encoding='utf-8') as f:
     f.write(report)
