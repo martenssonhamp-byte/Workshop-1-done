@@ -69,7 +69,7 @@ report += ("\n Total switch port usage: "
            + str(total_ports) + " ("
            + str(percent) + "%)\n")
 # Per location
-report += "\n" "-Switch ports usage per location with over 85%-" "\n"
+report += "\n" "-Switch ports usage per location with over 80%-" "\n"
 for location in data["locations"]:
    loc_ports = 0
    loc_used = 0
@@ -80,8 +80,8 @@ for location in data["locations"]:
             used = ports["used"]
             total = ports["total"]
             percent = round(used / total * 100, 1) if total > 0 else 0
-            if percent >= 85:
-                warning = "CAUTION!" if percent >= 85 else ""
+            if percent >= 80:
+                warning = "CAUTION!"
 
                 report += (device["hostname"].ljust(14) + "|" + location["site"].ljust(12) + "|" + ": "
                 + str(used) + "/"
@@ -107,6 +107,27 @@ for i, vlan in enumerate(sorted(vlans_set)): # i = index, row 106 - 109 is all a
     report += str(vlan)
     if i < (vlan_count) -1:
        report += ","
+
+#7. Overview of every location with devices and online/offline devices
+report += "\n" "------------------------------------------------------------------------------------------" 
+report += "\n\n" + "-Overview-" + "\n"
+report += "Site:".ljust(15) + " Devices  " + "Online  " + "Offline  " + "\n"
+for location in data["locations"]:
+    num_devices = 0
+    offline_count = 0
+    online_count = 0
+    for device in location["devices"]:
+        num_devices += 1
+        if device["status"] == "offline":
+            offline_count += 1
+        elif device["status"] == "online":
+           online_count += 1    
+
+    report += location["site"].ljust(14) + " | " + str(num_devices).rjust(3) + " " + str(offline_count).rjust(7) + " " + str(online_count).rjust(8) + "\n"
+      
+      
+
+
 # write the report to text file
 with open('report.txt', 'w', encoding='utf-8') as f:
     f.write(report)
