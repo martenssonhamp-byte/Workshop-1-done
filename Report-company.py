@@ -7,6 +7,11 @@ data = json.load(open("network_devices.json","r",encoding = "utf-8"))
 # Create a variable that holds our whole text report
 report = ""
 
+#1 Last updated report & company name
+report += "\n" + "Company Name: "  + data["company"] + "\n"
+report += "\n" + "LAST UPDATED:" "\n" + data["last_updated"] + "\n\n"
+    
+
 # loop through the location list 
 for location in data["locations"]:
     # add the site/'name' of the location to the report
