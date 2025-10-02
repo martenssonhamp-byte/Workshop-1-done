@@ -9,23 +9,38 @@ report = ""
 
 #1 Last updated report & company name
 report += "\n" + "Company Name: "  + data["company"] + "\n"
-report += "\n" + "LAST UPDATED:" "\n" + data["last_updated"] + "\n"
+report += "\n" + "LAST UPDATED:" "\n" + data["last_updated"].replace("T"," ")  + "\n"
 
 #2 List all devices with warning
-report += "\n" "ATTENTION! Devices with warnings" "\n"
+report += "\n" "ATTENTION! Devices with status: Warning!" "\n"
 report += "--------------------------------------------------------------------------------------------" "\n"
 for location in data["locations"]:
    for device in location["devices"]:
       if device["status"] != "online" and device["status"] != "offline":
          report += device["hostname"].ljust (12) + " | " + device["status"] + " | " + device["ip_address"].ljust (14) + " | " + device["type"].ljust (12) + " | " + location["site"] + "\n"
+
 # List all devices with Offline
-report += "\n" "ATTENTION! Devices with status offline!" "\n"
+report += "\n" "ATTENTION! Devices with status: Offline!" "\n"
 report += "--------------------------------------------------------------------------------------------" "\n"
 for location in data["locations"]:
    for device in location ["devices"]:
       if device["status"] != "online" and device["status"] != "warning":
         report += device["hostname"].ljust (12) + " | " + device["status"] + " | " + device["ip_address"].ljust (15) + " | " + device ["type"].ljust (12) + " | " + location["site"] + "\n"
-        
+
+#3. Total devices per type
+device_count = {}
+report += "\n" "---Number of devices---" "\n"
+
+for location in data["locations"]:
+   for device in location["devices"]:
+        t = device["type"]
+        if t not in device_count:
+           device_count[t] = 0
+        device_count[t] += 1
+for t in device_count:
+   report += t.ljust(13) + ": " + str(device_count[t]) + "\n"
+
+      
 
 # loop through the location list 
 for location in data["locations"]:

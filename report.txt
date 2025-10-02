@@ -2,18 +2,25 @@
 Company Name: TechCorp AB
 
 LAST UPDATED:
-2024-09-30T10:30:00
+2024-09-30 10:30:00
 
-ATTENTION! Devices with warnings
+ATTENTION! Devices with status: Warning!
 --------------------------------------------------------------------------------------------
-AP-FLOOR2-02 | warning | 192.168.20.102 | access_point | Huvudkontor
-RT-LAGER-01  | warning | 192.168.2.254  | router       | Lager
-SW-DC-TOR-02 | warning | 10.0.1.2       | switch       | Datacenter
+AP-FLOOR2-02 | warning | 192.168.20.102 | Access_point | Huvudkontor
+RT-LAGER-01  | warning | 192.168.2.254  | Router       | Lager
+SW-DC-TOR-02 | warning | 10.0.1.2       | Switch       | Datacenter
 
-ATTENTION! Devices with status offline!
+ATTENTION! Devices with status: Offline!
 --------------------------------------------------------------------------------------------
-SW-ACCESS-03 | offline | 192.168.1.5     | switch       | Huvudkontor
-AP-LAGER-02  | offline | 192.168.200.102 | access_point | Lager
+SW-ACCESS-03 | offline | 192.168.1.5     | Switch       | Huvudkontor
+AP-LAGER-02  | offline | 192.168.200.102 | Access_point | Lager
+
+---Number of devices---
+Switch       : 18
+Router       : 6
+Access_point : 9
+Firewall     : 5
+Load_balancer: 2
 
 Huvudkontor
   SW-CORE-01

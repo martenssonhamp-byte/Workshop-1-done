@@ -9,7 +9,7 @@
             "devices": [
                 {
                     "hostname": "SW-CORE-01",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Cisco",
                     "model": "Catalyst 9300",
                     "ip_address": "192.168.1.1",
@@ -30,7 +30,7 @@
                 },
                 {
                     "hostname": "SW-CORE-02",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Cisco",
                     "model": "Catalyst 9300",
                     "ip_address": "192.168.1.2",
@@ -51,7 +51,7 @@
                 },
                 {
                     "hostname": "SW-DIST-01",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Cisco",
                     "model": "Catalyst 2960",
                     "ip_address": "192.168.1.3",
@@ -69,7 +69,7 @@
                 },
                 {
                     "hostname": "SW-DIST-02",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Cisco",
                     "model": "Catalyst 2960",
                     "ip_address": "192.168.1.4",
@@ -87,7 +87,7 @@
                 },
                 {
                     "hostname": "SW-ACCESS-03",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "HP",
                     "model": "Aruba 2530",
                     "ip_address": "192.168.1.5",
@@ -106,7 +106,7 @@
                 },
                 {
                     "hostname": "SW-ACCESS-04",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "HP",
                     "model": "Aruba 2530",
                     "ip_address": "192.168.1.6",
@@ -124,7 +124,7 @@
                 },
                 {
                     "hostname": "SW-ACCESS-05",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "HP",
                     "model": "Aruba 2530",
                     "ip_address": "192.168.1.7",
@@ -142,7 +142,7 @@
                 },
                 {
                     "hostname": "RT-EDGE-01",
-                    "type": "router",
+                    "type": "Router",
                     "vendor": "Fortinet",
                     "model": "FortiGate 100F",
                     "ip_address": "192.168.1.254",
@@ -168,7 +168,7 @@
                 },
                 {
                     "hostname": "RT-EDGE-02",
-                    "type": "router",
+                    "type": "Router",
                     "vendor": "Fortinet",
                     "model": "FortiGate 100F",
                     "ip_address": "192.168.1.253",
@@ -189,7 +189,7 @@
                 },
                 {
                     "hostname": "AP-FLOOR1-01",
-                    "type": "access_point",
+                    "type": "Access_point",
                     "vendor": "Ubiquiti",
                     "model": "UniFi AC Pro",
                     "ip_address": "192.168.10.101",
@@ -199,7 +199,7 @@
                 },
                 {
                     "hostname": "AP-FLOOR1-02",
-                    "type": "access_point",
+                    "type": "Access_point",
                     "vendor": "Ubiquiti",
                     "model": "UniFi AC Pro",
                     "ip_address": "192.168.10.102",
@@ -209,7 +209,7 @@
                 },
                 {
                     "hostname": "AP-FLOOR2-01",
-                    "type": "access_point",
+                    "type": "Access_point",
                     "vendor": "Ubiquiti",
                     "model": "UniFi AC Pro",
                     "ip_address": "192.168.20.101",
@@ -219,7 +219,7 @@
                 },
                 {
                     "hostname": "AP-FLOOR2-02",
-                    "type": "access_point",
+                    "type": "Access_point",
                     "vendor": "Ubiquiti",
                     "model": "UniFi AC Pro",
                     "ip_address": "192.168.20.102",
@@ -229,7 +229,7 @@
                 },
                 {
                     "hostname": "AP-FLOOR3-01",
-                    "type": "access_point",
+                    "type": "Access_point",
                     "vendor": "Cisco",
                     "model": "Aironet 2802",
                     "ip_address": "192.168.30.101",
@@ -239,7 +239,7 @@
                 },
                 {
                     "hostname": "FW-DMZ-01",
-                    "type": "firewall",
+                    "type": "Firewall",
                     "vendor": "Palo Alto",
                     "model": "PA-440",
                     "ip_address": "192.168.100.1",
@@ -257,7 +257,7 @@
             "devices": [
                 {
                     "hostname": "SW-LAGER-01",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Cisco",
                     "model": "Catalyst 2960",
                     "ip_address": "192.168.2.1",
@@ -275,7 +275,7 @@
                 },
                 {
                     "hostname": "SW-LAGER-02",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Cisco",
                     "model": "Catalyst 2960",
                     "ip_address": "192.168.2.2",
@@ -294,7 +294,7 @@
                 },
                 {
                     "hostname": "RT-LAGER-01",
-                    "type": "router",
+                    "type": "Router",
                     "vendor": "Cisco",
                     "model": "ISR 4331",
                     "ip_address": "192.168.2.254",
@@ -315,7 +315,7 @@
                 },
                 {
                     "hostname": "AP-LAGER-01",
-                    "type": "access_point",
+                    "type": "Access_point",
                     "vendor": "Ubiquiti",
                     "model": "UniFi AC Lite",
                     "ip_address": "192.168.200.101",
@@ -325,7 +325,7 @@
                 },
                 {
                     "hostname": "AP-LAGER-02",
-                    "type": "access_point",
+                    "type": "Access_point",
                     "vendor": "Ubiquiti",
                     "model": "UniFi AC Lite",
                     "ip_address": "192.168.200.102",
@@ -342,7 +342,7 @@
             "devices": [
                 {
                     "hostname": "SW-MAL-CORE-01",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Juniper",
                     "model": "EX4300",
                     "ip_address": "192.168.3.1",
@@ -363,7 +363,7 @@
                 },
                 {
                     "hostname": "SW-MAL-ACC-01",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Juniper",
                     "model": "EX2300",
                     "ip_address": "192.168.3.2",
@@ -381,7 +381,7 @@
                 },
                 {
                     "hostname": "SW-MAL-ACC-02",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Juniper",
                     "model": "EX2300",
                     "ip_address": "192.168.3.3",
@@ -399,7 +399,7 @@
                 },
                 {
                     "hostname": "RT-MAL-01",
-                    "type": "router",
+                    "type": "Router",
                     "vendor": "Mikrotik",
                     "model": "CCR1009",
                     "ip_address": "192.168.3.254",
@@ -420,7 +420,7 @@
                 },
                 {
                     "hostname": "AP-MAL-01",
-                    "type": "access_point",
+                    "type": "Access_point",
                     "vendor": "Aruba",
                     "model": "AP-515",
                     "ip_address": "192.168.3.101",
@@ -430,7 +430,7 @@
                 },
                 {
                     "hostname": "AP-MAL-02",
-                    "type": "access_point",
+                    "type": "Access_point",
                     "vendor": "Aruba",
                     "model": "AP-515",
                     "ip_address": "192.168.3.102",
@@ -440,7 +440,7 @@
                 },
                 {
                     "hostname": "FW-MAL-01",
-                    "type": "firewall",
+                    "type": "Firewall",
                     "vendor": "Fortinet",
                     "model": "FortiGate 60F",
                     "ip_address": "192.168.3.200",
@@ -458,7 +458,7 @@
             "devices": [
                 {
                     "hostname": "SW-DC-CORE-01",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Cisco",
                     "model": "Nexus 9396",
                     "ip_address": "10.0.0.1",
@@ -484,7 +484,7 @@
                 },
                 {
                     "hostname": "SW-DC-CORE-02",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Cisco",
                     "model": "Nexus 9396",
                     "ip_address": "10.0.0.2",
@@ -510,7 +510,7 @@
                 },
                 {
                     "hostname": "SW-DC-TOR-01",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Arista",
                     "model": "7050SX",
                     "ip_address": "10.0.1.1",
@@ -529,7 +529,7 @@
                 },
                 {
                     "hostname": "SW-DC-TOR-02",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Arista",
                     "model": "7050SX",
                     "ip_address": "10.0.1.2",
@@ -548,7 +548,7 @@
                 },
                 {
                     "hostname": "SW-DC-TOR-03",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Arista",
                     "model": "7050SX",
                     "ip_address": "10.0.1.3",
@@ -567,7 +567,7 @@
                 },
                 {
                     "hostname": "RT-DC-EDGE-01",
-                    "type": "router",
+                    "type": "Router",
                     "vendor": "Juniper",
                     "model": "MX204",
                     "ip_address": "10.0.0.254",
@@ -593,7 +593,7 @@
                 },
                 {
                     "hostname": "FW-DC-01",
-                    "type": "firewall",
+                    "type": "Firewall",
                     "vendor": "Checkpoint",
                     "model": "6500",
                     "ip_address": "10.0.0.100",
@@ -604,7 +604,7 @@
                 },
                 {
                     "hostname": "FW-DC-02",
-                    "type": "firewall",
+                    "type": "Firewall",
                     "vendor": "Checkpoint",
                     "model": "6500",
                     "ip_address": "10.0.0.101",
@@ -615,7 +615,7 @@
                 },
                 {
                     "hostname": "LB-DC-01",
-                    "type": "load_balancer",
+                    "type": "Load_balancer",
                     "vendor": "F5",
                     "model": "BIG-IP i5800",
                     "ip_address": "10.0.0.50",
@@ -626,7 +626,7 @@
                 },
                 {
                     "hostname": "LB-DC-02",
-                    "type": "load_balancer",
+                    "type": "Load_balancer",
                     "vendor": "F5",
                     "model": "BIG-IP i5800",
                     "ip_address": "10.0.0.51",
@@ -644,7 +644,7 @@
             "devices": [
                 {
                     "hostname": "SW-DR-01",
-                    "type": "switch",
+                    "type": "Switch",
                     "vendor": "Dell",
                     "model": "S4128F",
                     "ip_address": "10.1.0.1",
@@ -662,7 +662,7 @@
                 },
                 {
                     "hostname": "RT-DR-01",
-                    "type": "router",
+                    "type": "Router",
                     "vendor": "Cisco",
                     "model": "ASR 1001",
                     "ip_address": "10.1.0.254",
@@ -683,7 +683,7 @@
                 },
                 {
                     "hostname": "FW-DR-01",
-                    "type": "firewall",
+                    "type": "Firewall",
                     "vendor": "Sophos",
                     "model": "XG 450",
                     "ip_address": "10.1.0.100",
