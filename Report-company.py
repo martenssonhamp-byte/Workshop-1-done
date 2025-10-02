@@ -1,4 +1,3 @@
-
 #Import the JSON file
 import json
 
