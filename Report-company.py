@@ -30,7 +30,7 @@ for location in data["locations"]:
 #3. Total devices per type
 device_count = {}
 report += "\n" "---Number of devices---" "\n"
-
+report +="------------------------------------------------------------------------------------------" "\n"
 for location in data["locations"]:
    for device in location["devices"]:
         t = device["type"]
@@ -40,6 +40,14 @@ for location in data["locations"]:
 for t in device_count:
    report += t.ljust(13) + ": " + str(device_count[t]) + "\n"
 
+#4. Devices with less than 30 days uptime
+report += "\n" "---Devices with < 30 days uptime---" "\n"
+report +="------------------------------------------------------------------------------------------" "\n"
+for location in data["locations"]:
+   for device in location["devices"]:
+      if device.get("uptime_days", 9999) < 30:
+         report += device["hostname"].ljust(13) + " " + str(device["uptime_days"]).ljust(3) + " " + "days" + "\n"
+      
       
 
 # loop through the location list 
