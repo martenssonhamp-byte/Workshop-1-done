@@ -12,7 +12,8 @@ intro_report += "\n" + "Company Name: "  + data["company"] + "\n"
 intro_report += "\n" + "LAST UPDATED:" "\n" + data["last_updated"].replace("T"," ")  + "\n"
 
 #2 List all devices with warning
-report += "\n############################################################################################"
+report += "\n############################################################################################\n"
+report += "                             -----Complete summary----- \n"
 report += "\n" "ATTENTION! Devices with status: Warning!" "\n\n"
 for location in data["locations"]:
    for device in location["devices"]:

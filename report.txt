@@ -11,6 +11,8 @@ LAST UPDATED:
 ⚠ 11 switches with high port usage > 80%! 
 
 ############################################################################################
+                             -----Complete summary----- 
+
 ATTENTION! Devices with status: Warning!
 
 AP-FLOOR2-02 | warning | 192.168.20.102 | Access_point | Huvudkontor
