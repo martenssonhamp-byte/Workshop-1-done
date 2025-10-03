@@ -168,7 +168,7 @@ exec_report += "⚠ WARNINGS! " + str(warning_count) + " devices with warning st
 exec_report += "⚠ " + str(low_uptime_count) + " devices with low uptime < 30 days, could indicate instability!" + "\n" 
 exec_report += "⚠ " + str(high_port_count) + " switches with high port usage > 80%! " + "\n"
 # write the report to text file
-with open('report.txt', 'w', encoding='utf-8') as f:
+with open('network_report.txt', 'w', encoding='utf-8') as f:
     f.write(intro_report)
     f.write(exec_report)
     f.write(report)
